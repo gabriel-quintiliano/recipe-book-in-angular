@@ -1,0 +1,57 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+
+  /* I found styles bellow to be important to create a better UX (mainly for low
+   * speed connections), by setting this fade-in animation and delaying only 300ms,
+   * we can avoid that the user see 'flash of invisible text' or just the eventual
+   * abrupt change from a fallback font to the one which is downloaded from Google
+   * Fonts or another service. Also, secondarily, it's also a nice, simple and
+   * modern effect, and DON'T affect your background-image, so don't worry, the
+   * user won't be staring at a blank screen */
+  opacity: 0;
+  animation: fade-in 800ms 300ms forwards;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+// Maybe this will be useful some time
+// nav {
+//   /* In this project, most - if not all - of the navbar styling will be applied
+//    * directly to the <ul> element, so this is to make <nav> define its width
+//    * according to the content within and don't (possibly) ruin the layout when
+//    * <ul> is absolutely positioned */
+//   display: inline-block;
+// }
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+img {
+  max-width: 100%;        // so the image its, at max, as big as its parent container
+  height: auto;           // just to make sure the image keeps its aspect-ratio
+  vertical-align: middle; // to get rid of that blank space bellow <img>
+  font-style: italic;     // to differentiate the "alt" text in case the image can't be loaded
+}

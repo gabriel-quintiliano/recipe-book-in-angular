@@ -1,0 +1,24 @@
+:root {
+  // FONTS
+  --primary-font: 'open sans', 'helvetica', arial, sans-serif; // general text
+  --secondary-font: 'Antonio', 'helvetica', arial, sans-serif; // main nav, titles and headings
+  --accent-font: 'oswald', 'helvetica', arial, sans-serif;
+
+  // GENERAL COLORS
+  --color-primary: hsl(32 72% 86%);
+  // --primary-color-light: hsl(32 72% 76%);
+  // --color-primary-dark: hsl(0, 93%, 80%);
+
+  --color-secondary:  hsl(0, 0%, 36%);
+  // --color-secondary-light: #07008b;
+  // --color-secondary-dark: #030048;
+
+  --color-accent: hsl(32 72% 56%);
+  // --color-accent-light: #fff7e6;
+  // --color-accent-dark: #fedf9c;
+
+  // GENERAL SIZES
+  --border-radius-sm: 2px;
+  --border-radius-md: 3px;
+  --border-radius-lg: 5px;
+}
