@@ -1,3 +1,36 @@
+@import '../../../../scss/abstract/mixins';
+
 :host {
   display: block;
+  background-color: var(--color-primary);
+}
+
+.header {
+  text-transform: capitalize;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; // anchor for &__nav--main
+  
+  &__title {
+    // without this translate it doesn't look really centered
+    transform: translateY(-.3rem);
+  }
+
+  &__nav {
+    font-family: var(--accent-font);
+    color: hsl(32, 71%, 15%);
+    font-size: 1.6rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__nav-item {
+    cursor: pointer;
+  }
+
+  &__nav--main {
+    @include center-absolutely;
+  }
 }

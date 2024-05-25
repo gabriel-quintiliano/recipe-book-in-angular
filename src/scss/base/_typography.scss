@@ -16,4 +16,12 @@ h4, h5, h6 {
   margin: 0;
   line-height: 1;
   font-size: inherit;
+  font-weight: 600;
+  text-wrap: pretty;
+}
+
+.heading-1 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 2.6rem;
 }

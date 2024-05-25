@@ -1,1 +1,20 @@
-<p>header works!</p>
+<div class="header container">
+  <h1 class="heading-1 header__title">{{ env.brandName }}</h1>
+  <nav>
+    <ul class="header__nav header__nav--main">
+      <li class="header__nav-item" routerLinkActive="selected">
+        <a [routerLink]="[env.routePath.recipes]" class="header__link" i18n>Recipes</a>
+      </li>
+      <li class="header__nav-item" routerLinkActive="selected">
+        <a [routerLink]="[env.routePath.shoppingList.default]" class="header__link" i18n>Shopping List</a>
+      </li>
+    </ul>
+  </nav>
+  <nav>
+    <ul class="header__nav header__nav--management">
+      <li class="header__nav-item" i18n>Login</li>
+      <li class="header__nav-item" i18n>Logout</li>
+      <li class="header__nav-item" i18n>Manage</li>
+    </ul>
+  </nav>
+</div>
