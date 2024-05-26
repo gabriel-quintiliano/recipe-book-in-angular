@@ -1,3 +1,95 @@
 :host {
   display: block;
 }
+
+.shopping-list {
+  margin-top: 4rem;
+
+  display: grid;
+  grid-template-columns: 4fr .2rem 6fr;
+  gap: 2rem;
+}
+
+.ingredient-form {
+  padding-block: 2rem;
+  display: grid;
+  align-content: center;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+
+  &__row {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+  }
+
+  &__group {
+    flex: 1 1 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    &--select {
+      max-width: 20%;
+    }
+  }
+
+  &__button-group {
+    flex: 0 0 40%;
+
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__button {
+    flex: 1;
+  }
+
+  &__control {
+
+  }
+
+  &__input {
+
+    &--name {
+      
+    }
+
+    &--amount {
+
+    }
+  }
+  
+  &__select {
+    
+    &--unit {
+
+    }
+  }
+}
+
+
+.xxx {
+  background-color: aquamarine;
+}
+
+.red {
+  background-color: rgb(225, 89, 89);
+}
+
+.blue {
+  background-color: lightblue;
+}
+
+.coral {
+  background-color: lightcoral;
+}
+
+.box {
+  height: 200px;
+  background-color: blue;
+}

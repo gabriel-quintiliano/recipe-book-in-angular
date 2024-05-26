@@ -1,1 +1,71 @@
-<p>shopping-list works!</p>
+<!-- <div class="shopping-list container">
+  <h2 class="sr-only">Shopping List</h2>
+  <div class="form-wrapper">
+    <form class="form">
+      <div class="form-group form__name-control">
+        <label class="form-label" for="ingredinent-name" class="form-label">Ingredient Name</label>
+        <input class="form-control" type="text" name="ingredient-name" id="ingredinent-name">
+      </div>
+      <div class="form__amount-group">
+        <div class="form-group form__amount-control">
+          <label class="form-label" for="ingredient-amount" class="form-label">Amount</label>
+          <input class="form-control" type="number" name="ingredient-amount" id="ingredient-amount">
+        </div>
+        <div class="form-group">
+          <select class="form-control form__unit-control" name="ingredient-amount-unit" id="ingredient-amount-unit">
+            <option value="" disabled selected>Measure</option>
+            <option value="g">gram(s)</option>
+            <option value="ml">milliliter(s)</option>
+            <option value="l">liter(s)</option>
+            <option value="kg">kilo(s)</option>
+            <option value="un">unity(ies)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form__buttons">
+        <button type="submit" class="btn form__button form__submit">Add</button>
+        <button type="button" class="btn form__button form__clear">Clear</button>
+      </div>
+    </form>
+  </div>
+</div> -->
+
+<div class="shopping-list container xxx">
+  <div class="ingredient-form blue">
+    <!-- <div class="box"></div> -->
+    <form action="" class="form">
+      <div class="form__row">
+        <div class="form__group">
+          <label class="form__label" for="ingredinent-name">Ingredient Name</label>
+          <input class="form__control form__input form__input--name" type="text" name="ingredient-name" id="ingredinent-name">
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__group">
+          <label class="form__label" for="ingredient-amount">Amount</label>
+          <input class="form__control form__input form__input--amount" type="number" name="ingredient-amount" id="ingredient-amount">
+        </div>
+        <div class="form__group form__group--select">
+          <select class="form__control form__select form__select--unit" name="ingredient-amount-unit" id="ingredient-amount-unit">
+            <option value="" disabled selected>Measure</option>
+            <option value="g">gram(s)</option>
+            <option value="ml">milliliter(s)</option>
+            <option value="l">liter(s)</option>
+            <option value="kg">kilo(s)</option>
+            <option value="un">unity(ies)</option>
+          </select>
+        </div>
+        <div class="form__button-group">
+          <button type="submit" class="btn form__button form__button--submit">Add</button>
+          <button type="button" class="btn form__button form__button--clear">Clear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="division red">
+    <div class="box"></div>
+  </div>
+  <div class="ingredient-list coral">
+    <div class="box"></div>
+  </div>
+</div>

@@ -44,9 +44,12 @@ li {
 //   display: inline-block;
 // }
 
-input {
+input, select {
   font-family: inherit;
   font-size: inherit;
+  height: 3rem;
+  border: 1px solid #d3c7bc;
+  border-radius: var(--border-radius-lg);
 }
 
 img {

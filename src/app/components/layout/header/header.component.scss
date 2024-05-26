@@ -7,7 +7,7 @@
 
 .header {
   text-transform: capitalize;
-  height: 5rem;
+  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
