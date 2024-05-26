@@ -59,3 +59,7 @@ img {
   font-style: italic;     // to differentiate the "alt" text in case the image can't be loaded
   display: inline-block;  // so border-radius and other block styles can be applied
 }
+
+button {
+  cursor: pointer;
+}
