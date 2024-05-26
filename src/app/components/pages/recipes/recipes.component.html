@@ -1,5 +1,5 @@
 <div class="recipes container">
-  <button class="btn recipes__btn">New Recipe</button>
+  <button type="button" class="btn recipes__btn">New Recipe</button>
 
   <div class="recipes__content">
 
@@ -7,7 +7,7 @@
     <ul class="recipe-list">
 
       <li class="recipe-list__item recipe">
-        <div class="recipe__text">
+        <div class="recipe__text-wrapper">
           <h3 class="heading-3 recipe__title" i18n>Receita 1</h3>
           <p>Lorem, ipsum dolor sit amet consectetur ait amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing elit</p>
         </div>
@@ -15,15 +15,15 @@
       </li>
 
       <li class="recipe-list__item recipe">
-        <div class="recipe__text">
-          <h3 class="heading-3 recipe__title" i18n>Receita 2 banana gratinada </h3>
+        <div class="recipe__text-wrapper">
+          <h3 class="heading-3 recipe__title" i18n>Receita 2 banana gratinada</h3>
           <p>Lorem ipsum dolor sit amet. vaspts.</p>
         </div>
-        <img class="recipe__img" src="https://picsum.photos/150/320" i18n-alt alt="recipe 2 item photo">
+        <img class="recipe__img" src="https://picsum.photos/350/60" i18n-alt alt="recipe 2 item photo">
       </li>
 
       <li class="recipe-list__item recipe">
-        <div class="recipe__text">
+        <div class="recipe__text-wrapper">
           <h3 class="heading-3 recipe__title" i18n>Receita 3 abacate</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
@@ -34,6 +34,20 @@
 
     <div class="recipe-details">
       <h2 class="sr-only">recipe details</h2>
+      <img class="recipe-details__img" src="https://picsum.photos/350/60" i18n-alt alt="recipe 2 item photo">
+
+      <div class="recipe-details__text-wrapper">
+        <h3 class="heading-3 recipe-details__title">Receita 2 banana gratinada</h3>
+        <button type="button" class="btn">Menage Recipe</button>
+        <p class="recipe-details__description">Lorem ipsum dolor sit amet. vaspts. Lorem ipsum dolor sit amet. vaspts. Lorem ipsum dolor sit amet. vaspts. Lorem ipsum dolor sit amet. vaspts. Lorem ipsum dolor sit amet. vaspts. Lorem ipsum dolor sit amet. vaspts.</p>
+        <div class="recipe-ingredients">
+          <ul class="recipe-ingredients__list">
+            <li class="recipe-ingredients__item">Batata - 2un</li>
+            <li class="recipe-ingredients__item">Cheese - 200g</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
 
   </div>
