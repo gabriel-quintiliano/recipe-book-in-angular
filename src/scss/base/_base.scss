@@ -54,4 +54,5 @@ img {
   height: auto;           // just to make sure the image keeps its aspect-ratio
   vertical-align: middle; // to get rid of that blank space bellow <img>
   font-style: italic;     // to differentiate the "alt" text in case the image can't be loaded
+  display: inline-block;  // so border-radius and other block styles can be applied
 }
